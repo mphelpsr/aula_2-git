@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Artigos</title>    
-</head>
+<html lang="pt-BR">
+    <head>
+        <title>Formulário de contato</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class="form-wrapper">
 
-<body>
-    <h1>Exemplo de artigos</h1>
+            <h2 class="form-title">Formulário de Contato</h2>
+            
+            <form id="contact-form">
 
-    <section>
-        <h2>O que é HTML</h2>
-        <p>HTML é uma abreviação de Hypertext Markup Language, ou seja, Linguagem de Marcação de Hipertexto. <br/>Resumindo, o HTML é uma linguagem usada para a publicação de conteúdo (texto, imagens, vídeos, áudio etc.) na web.</p>
-        <a href="./o-que-eh-html.html">Ler artigo completo</a>
+                <div class="form-input-group">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                </div>
 
-    </section>
+                <div class="form-input-group">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
 
-    <section>
-        <h2>O que é CSS</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed facere sit repudiandae! Dolorum, dolor repudiandae. Eligendi necessitatibus rerum illo quasi nostrum, ullam adipisci reiciendis autem possimus exercitationem tenetur expedita pariatur.</p>
-        <a href="./o-que-eh-css.html">Ler artigo completo</a>
+                <div class="form-input-group">
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                </div>
 
-    </section>
+                <input type="submit" value="Enviar">
+            </form>
 
-    
-</body>
-
+        </section>
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
 </html>
